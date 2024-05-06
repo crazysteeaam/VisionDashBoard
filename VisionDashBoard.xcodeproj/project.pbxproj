@@ -13,6 +13,13 @@
 		3FAAE3CA2BDF361800540B68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FAAE3C92BDF361800540B68 /* Assets.xcassets */; };
 		3FAAE3CD2BDF361800540B68 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FAAE3CC2BDF361800540B68 /* Preview Assets.xcassets */; };
 		3FAAE3D82BDF361800540B68 /* VisionDashBoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAAE3D72BDF361800540B68 /* VisionDashBoardTests.swift */; };
+		3FAAE3E22BDF366E00540B68 /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAAE3E12BDF366E00540B68 /* ProgressBarView.swift */; };
+		3FAAE3E42BDF369E00540B68 /* ProgressCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAAE3E32BDF369E00540B68 /* ProgressCardView.swift */; };
+		3FAAE3E62BDF36E000540B68 /* NotificationsWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAAE3E52BDF36E000540B68 /* NotificationsWidgetView.swift */; };
+		3FAAE3EC2BDF466800540B68 /* LeftArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAAE3EB2BDF466800540B68 /* LeftArea.swift */; };
+		3FAAE3EE2BDF4AC400540B68 /* BarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAAE3ED2BDF4AC400540B68 /* BarModel.swift */; };
+		3FAAE3F02BDFA1A600540B68 /* TabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAAE3EF2BDFA1A600540B68 /* TabViewModel.swift */; };
+		3FAAE3F22BDFA41E00540B68 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAAE3F12BDFA41E00540B68 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +42,13 @@
 		3FAAE3CE2BDF361800540B68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FAAE3D32BDF361800540B68 /* VisionDashBoardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VisionDashBoardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FAAE3D72BDF361800540B68 /* VisionDashBoardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionDashBoardTests.swift; sourceTree = "<group>"; };
+		3FAAE3E12BDF366E00540B68 /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
+		3FAAE3E32BDF369E00540B68 /* ProgressCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCardView.swift; sourceTree = "<group>"; };
+		3FAAE3E52BDF36E000540B68 /* NotificationsWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsWidgetView.swift; sourceTree = "<group>"; };
+		3FAAE3EB2BDF466800540B68 /* LeftArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftArea.swift; sourceTree = "<group>"; };
+		3FAAE3ED2BDF4AC400540B68 /* BarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarModel.swift; sourceTree = "<group>"; };
+		3FAAE3EF2BDFA1A600540B68 /* TabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewModel.swift; sourceTree = "<group>"; };
+		3FAAE3F12BDFA41E00540B68 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +97,13 @@
 				3FAAE3C92BDF361800540B68 /* Assets.xcassets */,
 				3FAAE3CE2BDF361800540B68 /* Info.plist */,
 				3FAAE3CB2BDF361800540B68 /* Preview Content */,
+				3FAAE3E12BDF366E00540B68 /* ProgressBarView.swift */,
+				3FAAE3E32BDF369E00540B68 /* ProgressCardView.swift */,
+				3FAAE3E52BDF36E000540B68 /* NotificationsWidgetView.swift */,
+				3FAAE3EB2BDF466800540B68 /* LeftArea.swift */,
+				3FAAE3ED2BDF4AC400540B68 /* BarModel.swift */,
+				3FAAE3EF2BDFA1A600540B68 /* TabViewModel.swift */,
+				3FAAE3F12BDFA41E00540B68 /* HomeView.swift */,
 			);
 			path = VisionDashBoard;
 			sourceTree = "<group>";
@@ -214,8 +235,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FAAE3F22BDFA41E00540B68 /* HomeView.swift in Sources */,
+				3FAAE3F02BDFA1A600540B68 /* TabViewModel.swift in Sources */,
 				3FAAE3C82BDF361700540B68 /* ContentView.swift in Sources */,
+				3FAAE3E22BDF366E00540B68 /* ProgressBarView.swift in Sources */,
 				3FAAE3C62BDF361700540B68 /* VisionDashBoardApp.swift in Sources */,
+				3FAAE3EE2BDF4AC400540B68 /* BarModel.swift in Sources */,
+				3FAAE3EC2BDF466800540B68 /* LeftArea.swift in Sources */,
+				3FAAE3E62BDF36E000540B68 /* NotificationsWidgetView.swift in Sources */,
+				3FAAE3E42BDF369E00540B68 /* ProgressCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
