@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3F7B33072BE867F400C22724 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7B33062BE867F400C22724 /* TaskView.swift */; };
 		3F7B33092BE889AD00C22724 /* RightArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7B33082BE889AD00C22724 /* RightArea.swift */; };
+		3F7B330D2BE8A21E00C22724 /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7B330C2BE8A21E00C22724 /* HomePageView.swift */; };
 		3FAAE3C42BDF361700540B68 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 3FAAE3C32BDF361700540B68 /* RealityKitContent */; };
 		3FAAE3C62BDF361700540B68 /* VisionDashBoardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAAE3C52BDF361700540B68 /* VisionDashBoardApp.swift */; };
 		3FAAE3C82BDF361700540B68 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAAE3C72BDF361700540B68 /* ContentView.swift */; };
@@ -19,7 +20,6 @@
 		3FAAE3E42BDF369E00540B68 /* ProgressCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAAE3E32BDF369E00540B68 /* ProgressCardView.swift */; };
 		3FAAE3E62BDF36E000540B68 /* NotificationsWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAAE3E52BDF36E000540B68 /* NotificationsWidgetView.swift */; };
 		3FAAE3EC2BDF466800540B68 /* LeftArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAAE3EB2BDF466800540B68 /* LeftArea.swift */; };
-		3FAAE3EE2BDF4AC400540B68 /* BarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAAE3ED2BDF4AC400540B68 /* BarModel.swift */; };
 		3FAAE3F02BDFA1A600540B68 /* TabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAAE3EF2BDFA1A600540B68 /* TabViewModel.swift */; };
 		3FAAE3F22BDFA41E00540B68 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAAE3F12BDFA41E00540B68 /* HomeView.swift */; };
 /* End PBXBuildFile section */
@@ -37,6 +37,7 @@
 /* Begin PBXFileReference section */
 		3F7B33062BE867F400C22724 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
 		3F7B33082BE889AD00C22724 /* RightArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightArea.swift; sourceTree = "<group>"; };
+		3F7B330C2BE8A21E00C22724 /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
 		3FAAE3BE2BDF361700540B68 /* VisionDashBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisionDashBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FAAE3C22BDF361700540B68 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		3FAAE3C52BDF361700540B68 /* VisionDashBoardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionDashBoardApp.swift; sourceTree = "<group>"; };
@@ -50,7 +51,6 @@
 		3FAAE3E32BDF369E00540B68 /* ProgressCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCardView.swift; sourceTree = "<group>"; };
 		3FAAE3E52BDF36E000540B68 /* NotificationsWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsWidgetView.swift; sourceTree = "<group>"; };
 		3FAAE3EB2BDF466800540B68 /* LeftArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftArea.swift; sourceTree = "<group>"; };
-		3FAAE3ED2BDF4AC400540B68 /* BarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarModel.swift; sourceTree = "<group>"; };
 		3FAAE3EF2BDFA1A600540B68 /* TabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewModel.swift; sourceTree = "<group>"; };
 		3FAAE3F12BDFA41E00540B68 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -105,11 +105,11 @@
 				3FAAE3E32BDF369E00540B68 /* ProgressCardView.swift */,
 				3FAAE3E52BDF36E000540B68 /* NotificationsWidgetView.swift */,
 				3FAAE3EB2BDF466800540B68 /* LeftArea.swift */,
-				3FAAE3ED2BDF4AC400540B68 /* BarModel.swift */,
 				3FAAE3EF2BDFA1A600540B68 /* TabViewModel.swift */,
 				3FAAE3F12BDFA41E00540B68 /* HomeView.swift */,
 				3F7B33062BE867F400C22724 /* TaskView.swift */,
 				3F7B33082BE889AD00C22724 /* RightArea.swift */,
+				3F7B330C2BE8A21E00C22724 /* HomePageView.swift */,
 			);
 			path = VisionDashBoard;
 			sourceTree = "<group>";
@@ -248,9 +248,9 @@
 				3FAAE3E22BDF366E00540B68 /* ProgressBarView.swift in Sources */,
 				3F7B33092BE889AD00C22724 /* RightArea.swift in Sources */,
 				3FAAE3C62BDF361700540B68 /* VisionDashBoardApp.swift in Sources */,
-				3FAAE3EE2BDF4AC400540B68 /* BarModel.swift in Sources */,
 				3FAAE3EC2BDF466800540B68 /* LeftArea.swift in Sources */,
 				3FAAE3E62BDF36E000540B68 /* NotificationsWidgetView.swift in Sources */,
+				3F7B330D2BE8A21E00C22724 /* HomePageView.swift in Sources */,
 				3FAAE3E42BDF369E00540B68 /* ProgressCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,6 +405,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "智能管理看板";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -431,6 +432,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "智能管理看板";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

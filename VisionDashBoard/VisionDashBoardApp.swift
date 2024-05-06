@@ -14,7 +14,7 @@ struct VisionDashBoardApp: App {
     var body: some Scene {
         WindowGroup {
             TabView {
-                LeftArea()
+                HomePageView()
                     .frame(minWidth: 500, minHeight: 1000)
     //                                .environment(model) // 注意这里改成environmentObject
                     .tabItem {

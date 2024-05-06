@@ -9,8 +9,28 @@ import SwiftUI
 
 struct RightArea: View {
     var body: some View {
-        TaskView()
-        TaskView()
+        GeometryReader { geometry in
+            VStack{
+                HStack{
+                    TaskView()
+                        .background(.ultraThinMaterial)
+                        .frame(width: geometry.size.width * 0.46, height: geometry.size.height * 0.3)
+                        .cornerRadius(40)
+                        .padding(20)
+                    TaskView()
+                        .background(.ultraThinMaterial)
+                        .frame(width: geometry.size.width * 0.46, height: geometry.size.height * 0.3)
+                        .cornerRadius(40)
+                        .padding(20)
+                }
+                ContentView()
+                    .background(.ultraThinMaterial)
+                    .frame(width: geometry.size.width * 0.95, height: geometry.size.height * 0.6)
+                    .cornerRadius(40)
+                    .padding(20)
+            }
+            .frame(width: geometry.size.width, height: geometry.size.height)
+        }
     }
 }
 
