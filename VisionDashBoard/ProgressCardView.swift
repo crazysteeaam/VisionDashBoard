@@ -33,7 +33,7 @@ struct ProgressCardView: View {
         StatisticData(iconColor: .green, title: "Tasks & Exam", value: "70%"),
         StatisticData(iconColor: .orange, title: "Quiz", value: "85%")
     ]
-    
+
     var body: some View {
         GeometryReader { geometry in
             ZStack {
@@ -143,10 +143,10 @@ struct StatisticView: View {
                     Text(title).font(.system(size: geometry.size.width * 0.08))
                     Text(value).font(.system(size: geometry.size.width * 0.08))
                 }
-                .frame(maxWidth: .infinity, alignment: .leading)
+                        .frame(maxWidth: .infinity, alignment: .leading)
 
             }
-            .frame(width: geometry.size.width, height: geometry.size.height)
+                    .frame(width: geometry.size.width, height: geometry.size.height)
         }
     }
 }

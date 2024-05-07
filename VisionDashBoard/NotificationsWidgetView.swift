@@ -49,40 +49,40 @@ struct NotificationView: View {
             HStack(alignment: .top) {
                 ZStack {
                     Circle()
-                        .fill(notification.color)
-                        .frame(width: geometry.size.width * 0.14, height: geometry.size.width * 0.14)
-                        .frame(minWidth: 60, minHeight: 60)
+                            .fill(notification.color)
+                            .frame(width: geometry.size.width * 0.14, height: geometry.size.width * 0.14)
+                            .frame(minWidth: 60, minHeight: 60)
                     notification.icon
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .foregroundColor(.white)
-                        .padding(10)
-                        .background(notification.color)
-                        .cornerRadius(10)
-                        .frame(width: geometry.size.width * 0.1, height: geometry.size.width * 0.1)
-                        .frame(minWidth: 60, minHeight: 60)
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .foregroundColor(.white)
+                            .padding(10)
+                            .background(notification.color)
+                            .cornerRadius(10)
+                            .frame(width: geometry.size.width * 0.1, height: geometry.size.width * 0.1)
+                            .frame(minWidth: 60, minHeight: 60)
                 }
-                
+
                 VStack(alignment: .leading) {
                     Text(notification.title)
-                        .font(.system(size: geometry.size.width * 0.06))
-                        .padding(1)
+                            .font(.system(size: geometry.size.width * 0.06))
+                            .padding(1)
                     Text(notification.subtitle)
-                        .font(.system(size: geometry.size.width * 0.04))
-                        .foregroundColor(.gray)
+                            .font(.system(size: geometry.size.width * 0.04))
+                            .foregroundColor(.gray)
                 }
-//                .frame(width: geometry.size.width)
-                .padding(.horizontal, 20)
+                        //                .frame(width: geometry.size.width)
+                        .padding(.horizontal, 20)
             }
             //            .background(notification.color)
 //                .padding(.horizontal,0)
 //            .frame(width: geometry.size.width * 0.8)
         }
-        .frame(minWidth: 500, idealWidth: 500, maxWidth:800 , minHeight: 100, idealHeight: 3000)
+                .frame(minWidth: 500, idealWidth: 500, maxWidth: 800, minHeight: 100, idealHeight: 3000)
     }
 }
 
 #Preview(windowStyle: .automatic) {
     NotificationsWidgetView()
-        .frame(minWidth: 500,minHeight: 200)
+            .frame(minWidth: 500, minHeight: 200)
 }

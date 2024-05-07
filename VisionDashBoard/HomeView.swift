@@ -17,7 +17,7 @@ struct HomeView: View {
         TabView(selection: $model.selectedType) {
             ForEach(TabViewModel.SelectionType.allCases) { selectionType in
                 LeftArea()
-                    .frame(minWidth: 800,minHeight: 1100)
+                        .frame(minWidth: 800, minHeight: 1100)
             }
         }
     }

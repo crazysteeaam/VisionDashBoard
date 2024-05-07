@@ -11,18 +11,18 @@ import Observation
 
 @Observable
 class TabViewModel {
-    
+
     var selectedType: SelectionType = .home
     var isShowing: Bool = false
-    
+
     enum SelectionType: String, Identifiable, CaseIterable {
         case home = "home"
         case fire = "fire"
-        
+
         var id: String {
             return rawValue
         }
-        
+
         var title: String {
             switch self {
             case .home:
@@ -32,5 +32,5 @@ class TabViewModel {
             }
         }
     }
-    
+
 }
