@@ -9,9 +9,8 @@ import SwiftUI
 
 struct LeftArea: View {
     var body: some View {
-
         GeometryReader { geometry in
-            VStack {
+            VStack { 
                 ProgressCardView()
                         .background(.ultraThinMaterial)
                         //                        .opacity(0.5)
@@ -31,6 +30,10 @@ struct LeftArea: View {
                             .cornerRadius(50)
                             .padding(20)
                 }
+            }
+            .onAppear {
+                print("LeftArea Width: \(geometry.size.width)")
+                print("LeftArea Height: \(geometry.size.height)")
             }
         }
                 .frame(minWidth: 800, minHeight: 1100)

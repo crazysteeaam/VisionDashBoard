@@ -29,6 +29,10 @@ struct RightArea: View {
                         .cornerRadius(40)
                         .padding(20)
             }
+                    .onAppear {
+                        print("RightArea Width: \(geometry.size.width)")
+                        print("RightArea Height: \(geometry.size.height)")
+                    }
                     .frame(width: geometry.size.width, height: geometry.size.height)
         }
     }
