@@ -15,28 +15,28 @@ struct LeftArea: View {
                         .background(.ultraThinMaterial)
                         //                        .opacity(0.5)
                         .frame(width: geometry.size.width * 0.96, height: geometry.size.height * 0.46)
-                        .cornerRadius(50)
-                        .padding(20)
+                        .cornerRadius(45)
+                        .padding(5)
 
                 HStack {
                     ProgressBarView()
                             .background(.ultraThinMaterial)
-                            .frame(width: geometry.size.width * 0.46, height: geometry.size.height * 0.46)
-                            .cornerRadius(50)
-                            .padding(20)
-                    NotificationsWidgetView()
+                            .frame(width: geometry.size.width * 0.47, height: geometry.size.height * 0.5)
+                            .cornerRadius(45)
+                            .padding(5)
+                    PlaneView()
                             .background(.ultraThinMaterial)
-                            .frame(width: geometry.size.width * 0.46, height: geometry.size.height * 0.46)
-                            .cornerRadius(50)
-                            .padding(20)
+                            .frame(width: geometry.size.width * 0.47, height: geometry.size.height * 0.5)
+                            .cornerRadius(45)
+                            .padding(5)
                 }
             }
             .onAppear {
                 print("LeftArea Width: \(geometry.size.width)")
                 print("LeftArea Height: \(geometry.size.height)")
             }
+            .frame(width: geometry.size.width, height: geometry.size.height)
         }
-                .frame(minWidth: 800, minHeight: 1100)
     }
 
 }
@@ -45,7 +45,6 @@ struct LeftArea: View {
 
     TabView() {
         LeftArea()
-                .frame(minWidth: 800, minHeight: 1100)
         ProgressBarView()
 
     }

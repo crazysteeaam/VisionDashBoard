@@ -10,6 +10,8 @@
 		3F7B33072BE867F400C22724 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7B33062BE867F400C22724 /* TaskView.swift */; };
 		3F7B33092BE889AD00C22724 /* RightArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7B33082BE889AD00C22724 /* RightArea.swift */; };
 		3F7B330D2BE8A21E00C22724 /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7B330C2BE8A21E00C22724 /* HomePageView.swift */; };
+		3F87475C2BEB655000053E73 /* PlaneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F87475B2BEB655000053E73 /* PlaneView.swift */; };
+		3F8747602BEB760100053E73 /* DragRotationModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F87475F2BEB760100053E73 /* DragRotationModifier.swift */; };
 		3FAAE3C42BDF361700540B68 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 3FAAE3C32BDF361700540B68 /* RealityKitContent */; };
 		3FAAE3C62BDF361700540B68 /* VisionDashBoardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAAE3C52BDF361700540B68 /* VisionDashBoardApp.swift */; };
 		3FAAE3C82BDF361700540B68 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAAE3C72BDF361700540B68 /* ContentView.swift */; };
@@ -38,6 +40,8 @@
 		3F7B33062BE867F400C22724 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
 		3F7B33082BE889AD00C22724 /* RightArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightArea.swift; sourceTree = "<group>"; };
 		3F7B330C2BE8A21E00C22724 /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
+		3F87475B2BEB655000053E73 /* PlaneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaneView.swift; sourceTree = "<group>"; };
+		3F87475F2BEB760100053E73 /* DragRotationModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragRotationModifier.swift; sourceTree = "<group>"; };
 		3FAAE3BE2BDF361700540B68 /* VisionDashBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisionDashBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FAAE3C22BDF361700540B68 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		3FAAE3C52BDF361700540B68 /* VisionDashBoardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionDashBoardApp.swift; sourceTree = "<group>"; };
@@ -74,6 +78,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F8747612BEB770200053E73 /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				3F87475F2BEB760100053E73 /* DragRotationModifier.swift */,
+			);
+			path = Modifier;
+			sourceTree = "<group>";
+		};
 		3FAAE3B52BDF361600540B68 = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +108,7 @@
 		3FAAE3C02BDF361700540B68 /* VisionDashBoard */ = {
 			isa = PBXGroup;
 			children = (
+				3F8747612BEB770200053E73 /* Modifier */,
 				3FAAE3C52BDF361700540B68 /* VisionDashBoardApp.swift */,
 				3FAAE3C72BDF361700540B68 /* ContentView.swift */,
 				3FAAE3C92BDF361800540B68 /* Assets.xcassets */,
@@ -110,6 +123,7 @@
 				3F7B33062BE867F400C22724 /* TaskView.swift */,
 				3F7B33082BE889AD00C22724 /* RightArea.swift */,
 				3F7B330C2BE8A21E00C22724 /* HomePageView.swift */,
+				3F87475B2BEB655000053E73 /* PlaneView.swift */,
 			);
 			path = VisionDashBoard;
 			sourceTree = "<group>";
@@ -242,11 +256,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FAAE3F22BDFA41E00540B68 /* HomeView.swift in Sources */,
+				3F87475C2BEB655000053E73 /* PlaneView.swift in Sources */,
 				3FAAE3F02BDFA1A600540B68 /* TabViewModel.swift in Sources */,
 				3FAAE3C82BDF361700540B68 /* ContentView.swift in Sources */,
 				3F7B33072BE867F400C22724 /* TaskView.swift in Sources */,
 				3FAAE3E22BDF366E00540B68 /* ProgressBarView.swift in Sources */,
 				3F7B33092BE889AD00C22724 /* RightArea.swift in Sources */,
+				3F8747602BEB760100053E73 /* DragRotationModifier.swift in Sources */,
 				3FAAE3C62BDF361700540B68 /* VisionDashBoardApp.swift in Sources */,
 				3FAAE3EC2BDF466800540B68 /* LeftArea.swift in Sources */,
 				3FAAE3E62BDF36E000540B68 /* NotificationsWidgetView.swift in Sources */,

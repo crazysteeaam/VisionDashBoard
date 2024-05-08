@@ -30,7 +30,8 @@ struct ContentView: View {
         GeometryReader { geometry in
             VStack(alignment: .leading, spacing: 20) {
                 Text("我的督办项")
-                    .font(.system(size: 62))
+                    .font(.system(size: geometry.size.width > 1000 ? 50 : 35))
+                    .bold()
                     .padding(.bottom, 30)
                 
                 VStack(alignment: .center, spacing: 0){
