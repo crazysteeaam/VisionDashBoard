@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct LeftArea: View {
+    @EnvironmentObject var viewModel: SharedViewModel
+    
     var body: some View {
         GeometryReader { geometry in
             VStack { 
@@ -24,11 +26,17 @@ struct LeftArea: View {
                             .frame(width: geometry.size.width * 0.47, height: geometry.size.height * 0.5)
                             .cornerRadius(45)
                             .padding(5)
-                    PlaneView()
+                        PlaneView()
                             .background(.ultraThinMaterial)
                             .frame(width: geometry.size.width * 0.47, height: geometry.size.height * 0.5)
                             .cornerRadius(45)
                             .padding(5)
+                            .onTapGesture {
+                                withAnimation {
+                                    print("123123")
+                                    viewModel.isRightAreaVisible.toggle()
+                                }
+                            }
                 }
             }
             .onAppear {
