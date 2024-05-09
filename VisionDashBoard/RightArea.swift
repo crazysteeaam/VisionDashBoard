@@ -12,22 +12,22 @@ struct RightArea: View {
         GeometryReader { geometry in
             VStack {
                 HStack {
-                    TaskView()
+                    PPView()
                             .background(.ultraThinMaterial)
-                            .frame(width: geometry.size.width * 0.46, height: geometry.size.height * 0.3)
+                            .frame(width: geometry.size.width * 0.46, height: geometry.size.height * 0.4)
                             .cornerRadius(40)
-                            .padding(20)
-                    TaskView()
+                            .padding(10)
+                    FRRView()
                             .background(.ultraThinMaterial)
-                            .frame(width: geometry.size.width * 0.46, height: geometry.size.height * 0.3)
+                            .frame(width: geometry.size.width * 0.46, height: geometry.size.height * 0.4)
                             .cornerRadius(40)
-                            .padding(20)
+                            .padding(10)
                 }
                 ContentView()
                         .background(.ultraThinMaterial)
-                        .frame(width: geometry.size.width * 0.95, height: geometry.size.height * 0.6)
+                        .frame(width: geometry.size.width * 0.95, height: geometry.size.height * 0.5)
                         .cornerRadius(40)
-                        .padding(20)
+                        .padding(10)
             }
                     .onAppear {
                         print("RightArea Width: \(geometry.size.width)")

@@ -37,7 +37,7 @@ struct ProgressCardView: View {
                     VStack(alignment: .leading,
                             spacing: geometry.size.width > 1000 ? 25 : 10) {
                         Text(businessDetailTitle)
-                            .font(.system(size: geometry.size.width > 1000 ? 60 : 45))
+                            .font(.system(size: geometry.size.width > 1000 ? 60 : 35))
                             .bold()
 
                         Text(dateRange)

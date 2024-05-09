@@ -21,8 +21,8 @@ struct PlaneView: View {
     var body: some View {
         GeometryReader { geometry in
             VStack(alignment: .leading) {
-                Text("完成比例")
-                    .font(.system(size: geometry.size.width > 1000 ? 50 : 35))
+                Text("当前架次")
+                    .font(.system(size: geometry.size.width > 1000 ? 50 : 25))
                     .bold()
                     .padding()
                     .padding(.bottom, 0)

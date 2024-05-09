@@ -13,35 +13,36 @@ struct HomePageView: View {
 
     var body: some View {
         GeometryReader { geometry in
-            HStack(alignment:.center, spacing: 0) {
+            HStack(alignment: .center, spacing: 0) {
                 LeftArea()
-                    .padding()
-                    .frame(width: isRightAreaVisible ? geometry.size.width * 0.48 : geometry.size.width * 0.65)
-                    .animation(.default, value: isRightAreaVisible)
+                        .padding()
+                        .frame(width: isRightAreaVisible ? geometry.size.width * 0.48 : geometry.size.width * 0.65)
+                        .animation(.default, value: isRightAreaVisible)
 //                    .animation(.timingCurve(0.50, 0.10, 0.50, 0.90, duration: 1.55), value: isRightAreaVisible)
-                Button(action: {
-                    // 切换RightArea的显示状态
-                    withAnimation { // 添加动画
-                        isRightAreaVisible.toggle()
-                    
-                    }
-                }) {
-                    Image(systemName: "share")
-                            .padding()
-                }
-                        .frame(width: 44, height: 44)
+                
+//                Button(action: {
+//                    // 切换RightArea的显示状态
+//                    withAnimation { // 添加动画
+//                        isRightAreaVisible.toggle()
+//
+//                    }
+//                }) {
+//                    Image(systemName: "share")
+//                            .padding()
+//                }
+//                        .frame(width: 44, height: 44)
                 if isRightAreaVisible {
                     RightArea()
-                        .frame(width: geometry.size.width * 0.5) // Adjust the width of RightArea
-                        .transition(.slide) // 使用滑动效果作为过渡动画
+                            .frame(width: geometry.size.width * 0.5) // Adjust the width of RightArea
+                            .transition(.slide) // 使用滑动效果作为过渡动画
 //                        .animation(.timingCurve(0.50, 0.10, 0.50, 0.90, duration: 20), value: isRightAreaVisible)
                 }
             }
-            .onAppear {
-                print("WindowArea Width: \(geometry.size.width)")
-                print("WindowArea Height: \(geometry.size.height)")
-            }
-            .frame(width: geometry.size.width, alignment: .leading)
+//                    .onAppear {
+//                        print("WindowArea Width: \(geometry.size.width)")
+//                        print("WindowArea Height: \(geometry.size.height)")
+//                    }
+                    .frame(width: geometry.size.width, alignment: .leading)
         }
     }
 }

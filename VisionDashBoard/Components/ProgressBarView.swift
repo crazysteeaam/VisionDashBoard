@@ -20,7 +20,7 @@ struct ProgressBarView: View {
         GeometryReader { geometry in
             VStack(alignment: .leading, spacing: 20) {
                 Text("任务详情")
-                    .font(.system(size: geometry.size.width > 1000 ? 50 : 35))
+                    .font(.system(size: geometry.size.width > 1000 ? 50 : 25))
                     .bold()
                     .padding(.bottom, 0)
                 ForEach(subjects, id: \.0) { subject in

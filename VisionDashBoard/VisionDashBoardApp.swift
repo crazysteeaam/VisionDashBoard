@@ -15,13 +15,31 @@ struct VisionDashBoardApp: App {
         WindowGroup {
             TabView {
                 HomePageView()
-                        .frame(minWidth: 500, minHeight: 1000)
+                        //                        .frame(minWidth: 500, minHeight: 1000)
                         .tabItem {
                             Label("Home", systemImage: "house") // 使用系统图标代表"home"标签
                         }
 
-                LeftArea() // 如果火焰区域有不同的视图，您可以替换LeftArea()为那个视图
-                        .frame(minWidth: 500, minHeight: 1000)
+                HomePageView()
+                        //                        .frame(minWidth: 500, minHeight: 1000)
+                        .tabItem {
+                            Label("Fire", systemImage: "flame.fill") // 使用系统图标代表"fire"标签
+                        }
+
+                HomePageView()
+                        //                        .frame(minWidth: 500, minHeight: 1000)
+                        .tabItem {
+                            Label("Fire", systemImage: "flame.fill") // 使用系统图标代表"fire"标签
+                        }
+
+                HomePageView()
+                        //                        .frame(minWidth: 500, minHeight: 1000)
+                        .tabItem {
+                            Label("Fire", systemImage: "flame.fill") // 使用系统图标代表"fire"标签
+                        }
+
+                HomePageView()
+                        //                        .frame(minWidth: 500, minHeight: 1000)
                         .tabItem {
                             Label("Fire", systemImage: "flame.fill") // 使用系统图标代表"fire"标签
                         }
